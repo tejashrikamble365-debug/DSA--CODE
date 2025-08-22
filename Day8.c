@@ -6,11 +6,11 @@ void reversewords(char *s){
     int count=0;
     char *p=s;
 while(*p){
-     while(*p && isspace(*p))p++;
-     if((*p){
+     while(*p && isspace(*p)) p++;
+     if(*p){
      words[count++]=p;
-      while(*p && !isspace(*p))p++;
-      if(*p)*p++='\0';
+      while(*p && !isspace(*p)) p++;
+      if(*p) *p++='\0';
   }
 }
 for(int i=count-1;i>=0;i--){
